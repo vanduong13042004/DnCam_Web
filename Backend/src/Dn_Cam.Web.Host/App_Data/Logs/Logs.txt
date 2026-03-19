@@ -1,0 +1,487 @@
+DEBUG 2026-03-19 11:51:31,305 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2026-03-19 11:51:31,694 [2    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2026-03-19 11:51:31,708 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Web.Host.Startup.Dn_CamWebHostModule, Dn_Cam.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,710 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamWebCoreModule, Dn_Cam.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,710 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamApplicationModule, Dn_Cam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,711 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamCoreModule, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,711 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,711 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,711 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,712 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,713 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.EntityFrameworkCore.Dn_CamEntityFrameworkModule, Dn_Cam.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,713 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,713 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,714 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,714 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,714 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,714 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:31,715 [2    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2026-03-19 11:51:31,974 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 11:51:31,974 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 11:51:31,974 [2    ] o.Configuration.LanguageManagementConfig - Converted Dn_Cam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 11:51:31,974 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 11:51:33,041 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Dn_Cam.EntityFrameworkCore.Dn_CamDbContext, Dn_Cam.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 11:51:33,120 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2026-03-19 11:51:33,173 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2026-03-19 11:51:33,202 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2026-03-19 11:51:33,212 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Dn_Cam
+DEBUG 2026-03-19 11:51:33,224 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2026-03-19 11:51:33,229 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-03-19 11:51:33,236 [2    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Dn_Cam.MultiTenancy.Tenant, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Dn_Cam.Authorization.Users.User, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-03-19 11:51:33,247 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2026-03-19 11:51:33,247 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Users.Dto.CreateUserDto
+DEBUG 2026-03-19 11:51:33,250 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Users.Dto.UserDto
+DEBUG 2026-03-19 11:51:33,250 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2026-03-19 11:51:33,250 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2026-03-19 11:51:33,250 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Roles.Dto.PermissionDto
+DEBUG 2026-03-19 11:51:33,250 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2026-03-19 11:51:33,250 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.MultiTenancy.Dto.TenantDto
+INFO  2026-03-19 11:51:35,530 [2    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2026-03-19 11:51:36,543 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/ - - -
+INFO  2026-03-19 11:51:36,607 [2    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2026-03-19 11:51:36,608 [2    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2026-03-19 11:51:36,610 [2    ] Microsoft.Hosting.Lifetime               - Content root path: D:\Đồ án tốt nghiệp\Dn_Cam\10.2.0\aspnet-core\src\Dn_Cam.Web.Host
+INFO  2026-03-19 11:51:38,182 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host)'
+INFO  2026-03-19 11:51:38,214 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Dn_Cam.Web.Host.Controllers.HomeController (Dn_Cam.Web.Host).
+INFO  2026-03-19 11:51:38,384 [10   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2026-03-19 11:51:38,395 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host) in 171.6558ms
+INFO  2026-03-19 11:51:38,416 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host)'
+INFO  2026-03-19 11:51:38,439 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger - - -
+INFO  2026-03-19 11:51:38,449 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/ - 302 - - 1908.9765ms
+INFO  2026-03-19 11:51:38,481 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger - 301 - - 13.7734ms
+INFO  2026-03-19 11:51:38,482 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 11:51:38,519 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 36.2707ms
+INFO  2026-03-19 11:51:38,562 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui.css - - -
+INFO  2026-03-19 11:51:38,592 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui-bundle.js - - -
+INFO  2026-03-19 11:51:38,617 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2026-03-19 11:51:38,623 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui.css - 200 154949 text/css 60.5651ms
+INFO  2026-03-19 11:51:38,624 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/swagger-ui-standalone-preset.js - - -
+INFO  2026-03-19 11:51:38,655 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2026-03-19 11:51:38,663 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2026-03-19 11:51:38,670 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 44.8488ms
+INFO  2026-03-19 11:51:38,696 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - - -
+INFO  2026-03-19 11:51:38,767 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/swagger-ui-bundle.js - 200 1484234 text/javascript 171.4432ms
+INFO  2026-03-19 11:51:38,799 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - - -
+INFO  2026-03-19 11:51:38,828 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 11:51:38,832 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 3.8286ms
+INFO  2026-03-19 11:51:38,879 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 11:51:38,896 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Đồ án tốt nghiệp\Dn_Cam\10.2.0\aspnet-core\src\Dn_Cam.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2026-03-19 11:51:38,897 [29   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Đồ án tốt nghiệp\Dn_Cam\10.2.0\aspnet-core\src\Dn_Cam.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2026-03-19 11:51:38,925 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - 200 8029 text/javascript 159.9573ms
+INFO  2026-03-19 11:51:38,926 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - 200 3697 text/javascript 205.6779ms
+INFO  2026-03-19 11:51:38,956 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 112.0494ms
+INFO  2026-03-19 11:51:38,990 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 11:51:39,021 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 11:51:39,053 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 11:51:39,070 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 11:51:39,115 [9    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 11:51:39,147 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - - -
+INFO  2026-03-19 11:51:39,149 [29   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2026-03-19 11:51:39,177 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/favicon-32x32.png - 200 628 image/png 34.7893ms
+INFO  2026-03-19 11:51:39,209 [9    ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 128.161ms
+INFO  2026-03-19 11:51:39,211 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 11:51:39,241 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 143.5642ms
+INFO  2026-03-19 11:51:39,276 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 286.7594ms
+DEBUG 2026-03-19 14:28:14,439 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2026-03-19 14:28:15,419 [2    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2026-03-19 14:28:15,451 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Web.Host.Startup.Dn_CamWebHostModule, Dn_Cam.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,476 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamWebCoreModule, Dn_Cam.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,495 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamApplicationModule, Dn_Cam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,496 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamCoreModule, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,507 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,508 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,526 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,537 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,539 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.EntityFrameworkCore.Dn_CamEntityFrameworkModule, Dn_Cam.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,540 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,547 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,554 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,571 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,572 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,578 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:15,588 [2    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2026-03-19 14:28:16,228 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 14:28:16,229 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 14:28:16,229 [2    ] o.Configuration.LanguageManagementConfig - Converted Dn_Cam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 14:28:16,229 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 14:28:19,871 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Dn_Cam.EntityFrameworkCore.Dn_CamDbContext, Dn_Cam.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:28:20,985 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2026-03-19 14:28:21,400 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2026-03-19 14:28:21,605 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2026-03-19 14:28:21,740 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Dn_Cam
+DEBUG 2026-03-19 14:28:21,904 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2026-03-19 14:28:21,971 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-03-19 14:28:22,059 [2    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Dn_Cam.MultiTenancy.Tenant, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Dn_Cam.Authorization.Users.User, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-03-19 14:28:22,136 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2026-03-19 14:28:22,137 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Users.Dto.CreateUserDto
+DEBUG 2026-03-19 14:28:22,153 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Users.Dto.UserDto
+DEBUG 2026-03-19 14:28:22,156 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2026-03-19 14:28:22,156 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2026-03-19 14:28:22,157 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Roles.Dto.PermissionDto
+DEBUG 2026-03-19 14:28:22,157 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2026-03-19 14:28:22,158 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.MultiTenancy.Dto.TenantDto
+INFO  2026-03-19 14:28:31,161 [2    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2026-03-19 14:28:32,523 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/ - - -
+INFO  2026-03-19 14:28:32,797 [2    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2026-03-19 14:28:32,820 [2    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2026-03-19 14:28:32,823 [2    ] Microsoft.Hosting.Lifetime               - Content root path: D:\Đồ án tốt nghiệp\Dn_Cam\10.2.0\aspnet-core\src\Dn_Cam.Web.Host
+INFO  2026-03-19 14:28:33,582 [13   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:28:33,880 [13   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Dn_Cam.Web.Host.Controllers.HomeController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:28:34,721 [10   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2026-03-19 14:28:34,797 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host) in 857.5244ms
+INFO  2026-03-19 14:28:34,806 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:28:35,022 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/ - 302 - - 2461.1375ms
+INFO  2026-03-19 14:28:35,058 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - - -
+INFO  2026-03-19 14:28:35,065 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 14:28:35,080 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - - -
+INFO  2026-03-19 14:28:35,094 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 14:28:35,184 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.swagger.js was not modified
+INFO  2026-03-19 14:28:35,237 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.js was not modified
+INFO  2026-03-19 14:28:35,275 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - 304 - text/javascript 162.7504ms
+INFO  2026-03-19 14:28:35,309 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - 304 - text/javascript 209.5060ms
+INFO  2026-03-19 14:28:35,342 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 243.6559ms
+INFO  2026-03-19 14:28:35,502 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 380.5492ms
+INFO  2026-03-19 14:28:35,522 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 14:28:35,542 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 14:28:35,680 [9    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:28:35,812 [9    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:28:36,023 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 454.4565ms
+INFO  2026-03-19 14:28:36,082 [21   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:28:36,124 [21   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 288.7675ms
+INFO  2026-03-19 14:28:36,142 [21   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:28:36,150 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 640.1225ms
+INFO  2026-03-19 14:28:46,540 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/services/app/Account/IsTenantAvailable - application/json 29
+INFO  2026-03-19 14:28:46,551 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:28:46,554 [22   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:28:46,565 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Authorization.Accounts.AccountAppService.IsTenantAvailable (Dn_Cam.Application)'
+INFO  2026-03-19 14:28:46,599 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "IsTenantAvailable", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Authorization.Accounts.Dto.IsTenantAvailableOutput] IsTenantAvailable(Dn_Cam.Authorization.Accounts.Dto.IsTenantAvailableInput) on controller Dn_Cam.Authorization.Accounts.AccountAppService (Dn_Cam.Application).
+INFO  2026-03-19 14:28:47,095 [21   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:28:47,118 [21   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Authorization.Accounts.AccountAppService.IsTenantAvailable (Dn_Cam.Application) in 516.5213ms
+INFO  2026-03-19 14:28:47,121 [21   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Authorization.Accounts.AccountAppService.IsTenantAvailable (Dn_Cam.Application)'
+INFO  2026-03-19 14:28:47,125 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/services/app/Account/IsTenantAvailable - 200 - application/json;+charset=utf-8 588.4198ms
+INFO  2026-03-19 14:29:02,951 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Account/IsTenantAvailable - - -
+INFO  2026-03-19 14:29:02,968 [21   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '405 HTTP Method Not Supported'
+INFO  2026-03-19 14:29:02,972 [21   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '405 HTTP Method Not Supported'
+INFO  2026-03-19 14:29:02,976 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Account/IsTenantAvailable - 405 - - 25.2486ms
+INFO  2026-03-19 14:29:46,272 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/services/app/Account/Register - application/json 162
+INFO  2026-03-19 14:29:46,276 [22   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:29:46,280 [22   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:29:46,284 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Authorization.Accounts.AccountAppService.Register (Dn_Cam.Application)'
+INFO  2026-03-19 14:29:46,296 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Authorization.Accounts.Dto.RegisterOutput] Register(Dn_Cam.Authorization.Accounts.Dto.RegisterInput) on controller Dn_Cam.Authorization.Accounts.AccountAppService (Dn_Cam.Application).
+DEBUG 2026-03-19 14:41:20,794 [2    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2026-03-19 14:41:22,445 [2    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2026-03-19 14:41:22,485 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Web.Host.Startup.Dn_CamWebHostModule, Dn_Cam.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,492 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamWebCoreModule, Dn_Cam.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,495 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamApplicationModule, Dn_Cam.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,496 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.Dn_CamCoreModule, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,496 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,497 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,498 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,500 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,501 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Dn_Cam.EntityFrameworkCore.Dn_CamEntityFrameworkModule, Dn_Cam.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,503 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,504 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,505 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,506 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,506 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,507 [2    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=10.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:22,511 [2    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2026-03-19 14:41:23,690 [2    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 14:41:23,691 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 14:41:23,691 [2    ] o.Configuration.LanguageManagementConfig - Converted Dn_Cam (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 14:41:23,691 [2    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2026-03-19 14:41:27,317 [2    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Dn_Cam.EntityFrameworkCore.Dn_CamDbContext, Dn_Cam.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2026-03-19 14:41:27,683 [2    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2026-03-19 14:41:27,925 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2026-03-19 14:41:28,075 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2026-03-19 14:41:28,107 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: Dn_Cam
+DEBUG 2026-03-19 14:41:28,156 [2    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2026-03-19 14:41:28,175 [2    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2026-03-19 14:41:28,192 [2    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Dn_Cam.MultiTenancy.Tenant, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Dn_Cam.Authorization.Users.User, Dn_Cam.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2026-03-19 14:41:28,229 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 7 classes define auto mapping attributes
+DEBUG 2026-03-19 14:41:28,229 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Users.Dto.CreateUserDto
+DEBUG 2026-03-19 14:41:28,240 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Users.Dto.UserDto
+DEBUG 2026-03-19 14:41:28,241 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2026-03-19 14:41:28,242 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Sessions.Dto.UserLoginInfoDto
+DEBUG 2026-03-19 14:41:28,242 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.Roles.Dto.PermissionDto
+DEBUG 2026-03-19 14:41:28,242 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2026-03-19 14:41:28,243 [2    ] Abp.AutoMapper.AbpAutoMapperModule       - Dn_Cam.MultiTenancy.Dto.TenantDto
+INFO  2026-03-19 14:41:43,637 [2    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,fa,ja,zh-Hans
+INFO  2026-03-19 14:41:45,170 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/ - - -
+INFO  2026-03-19 14:41:45,230 [2    ] Microsoft.Hosting.Lifetime               - Application started. Press Ctrl+C to shut down.
+INFO  2026-03-19 14:41:45,233 [2    ] Microsoft.Hosting.Lifetime               - Hosting environment: Development
+INFO  2026-03-19 14:41:45,235 [2    ] Microsoft.Hosting.Lifetime               - Content root path: D:\Đồ án tốt nghiệp\Dn_Cam\10.2.0\aspnet-core\src\Dn_Cam.Web.Host
+INFO  2026-03-19 14:41:47,672 [17   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:41:47,782 [17   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Dn_Cam.Web.Host.Controllers.HomeController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:41:48,430 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2026-03-19 14:41:48,468 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host) in 652.3354ms
+INFO  2026-03-19 14:41:48,475 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.HomeController.Index (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:41:48,618 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 14:41:48,627 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 14:41:48,641 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/ - 302 - - 3478.1347ms
+INFO  2026-03-19 14:41:48,705 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 108.5914ms
+INFO  2026-03-19 14:41:48,922 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 231.8767ms
+INFO  2026-03-19 14:41:48,952 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 14:41:49,047 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 14:41:49,106 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:41:49,202 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:41:49,360 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 425.4844ms
+INFO  2026-03-19 14:41:49,404 [16   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:41:49,457 [16   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 240.506ms
+INFO  2026-03-19 14:41:49,501 [16   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:41:49,531 [16   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 542.3546ms
+INFO  2026-03-19 14:42:16,309 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/services/app/Role/Create - application/json 150
+INFO  2026-03-19 14:42:16,322 [5    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:42:16,326 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:42:16,372 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Roles.RoleAppService.CreateAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:42:16,398 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Roles.Dto.RoleDto] CreateAsync(Dn_Cam.Roles.Dto.CreateRoleDto) on controller Dn_Cam.Roles.RoleAppService (Dn_Cam.Application).
+WARN  2026-03-19 14:42:16,507 [5    ] Mvc.Authorization.AbpAuthorizationFilter - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+INFO  2026-03-19 14:42:16,521 [5    ] c.Infrastructure.ControllerActionInvoker - Authorization failed for the request at filter 'Abp.AspNetCore.Mvc.Authorization.AbpAuthorizationFilter'.
+INFO  2026-03-19 14:42:16,527 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:42:16,533 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Roles.RoleAppService.CreateAsync (Dn_Cam.Application) in 131.473ms
+INFO  2026-03-19 14:42:16,537 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Roles.RoleAppService.CreateAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:42:16,541 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/services/app/Role/Create - 401 - application/json;+charset=utf-8 240.7822ms
+INFO  2026-03-19 14:42:28,714 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Role/Create - - -
+INFO  2026-03-19 14:42:28,728 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '405 HTTP Method Not Supported'
+INFO  2026-03-19 14:42:28,731 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '405 HTTP Method Not Supported'
+INFO  2026-03-19 14:42:28,734 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Role/Create - 405 - - 21.6357ms
+INFO  2026-03-19 14:43:43,994 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Role/GetAll - - -
+INFO  2026-03-19 14:43:44,001 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:43:44,072 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Dn_Cam.Roles.Dto.RoleDto]] GetAllAsync(Dn_Cam.Roles.Dto.PagedRoleResultRequestDto) on controller Dn_Cam.Roles.RoleAppService (Dn_Cam.Application).
+WARN  2026-03-19 14:43:52,166 [23   ] Mvc.ExceptionHandling.AbpExceptionFilter - Current user did not login to the application!
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at lambda_method1844(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2026-03-19 14:43:52,505 [23   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:43:52,533 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application) in 8433.392ms
+INFO  2026-03-19 14:43:52,636 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:43:52,954 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Role/GetAll - 401 - application/json;+charset=utf-8 8646.1032ms
+INFO  2026-03-19 14:44:27,841 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - application/json 54
+INFO  2026-03-19 14:44:27,852 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:44:27,860 [25   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:44:27,908 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:44:27,974 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Models.TokenAuth.AuthenticateResultModel] Authenticate(Dn_Cam.Models.TokenAuth.AuthenticateModel) on controller Dn_Cam.Controllers.TokenAuthController (Dn_Cam.Web.Core).
+INFO  2026-03-19 14:44:29,547 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - application/json 54
+INFO  2026-03-19 14:44:29,551 [3    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:44:29,555 [3    ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:44:29,580 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:44:29,587 [3    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Models.TokenAuth.AuthenticateResultModel] Authenticate(Dn_Cam.Models.TokenAuth.AuthenticateModel) on controller Dn_Cam.Controllers.TokenAuthController (Dn_Cam.Web.Core).
+INFO  2026-03-19 14:44:32,095 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - application/json 54
+INFO  2026-03-19 14:44:32,098 [24   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:44:32,102 [24   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:44:32,106 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:44:32,113 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Models.TokenAuth.AuthenticateResultModel] Authenticate(Dn_Cam.Models.TokenAuth.AuthenticateModel) on controller Dn_Cam.Controllers.TokenAuthController (Dn_Cam.Web.Core).
+INFO  2026-03-19 14:44:34,369 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - application/json 54
+INFO  2026-03-19 14:44:34,404 [25   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:44:34,408 [25   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:44:34,415 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:44:34,455 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Models.TokenAuth.AuthenticateResultModel] Authenticate(Dn_Cam.Models.TokenAuth.AuthenticateModel) on controller Dn_Cam.Controllers.TokenAuthController (Dn_Cam.Web.Core).
+INFO  2026-03-19 14:44:34,909 [3    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:44:35,450 [24   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:44:35,458 [3    ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core) in 5863.3121ms
+INFO  2026-03-19 14:44:35,677 [3    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:44:35,678 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core) in 3345.306ms
+INFO  2026-03-19 14:44:36,010 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:44:36,025 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - 200 - application/json;+charset=utf-8 6133.6849ms
+INFO  2026-03-19 14:44:36,192 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - 200 - application/json;+charset=utf-8 3939.1105ms
+INFO  2026-03-19 14:44:36,197 [23   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:44:36,206 [23   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core) in 8223.5247ms
+INFO  2026-03-19 14:44:36,211 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:44:36,217 [23   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:44:36,222 [23   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - 200 - application/json;+charset=utf-8 8416.4544ms
+INFO  2026-03-19 14:44:36,228 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:44:36,290 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:44:36,375 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:44:36,381 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core) in 1920.1983ms
+INFO  2026-03-19 14:44:36,385 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:44:36,394 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - 200 - application/json;+charset=utf-8 2024.4447ms
+INFO  2026-03-19 14:44:36,413 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:44:36,571 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 362.3817ms
+INFO  2026-03-19 14:44:36,576 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 366.2515ms
+INFO  2026-03-19 14:44:36,580 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 331.7300ms
+INFO  2026-03-19 14:44:36,590 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 172.9051ms
+INFO  2026-03-19 14:44:36,612 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 14:44:36,618 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 6.3395ms
+INFO  2026-03-19 14:44:36,645 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 14:44:36,695 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 51.1010ms
+INFO  2026-03-19 14:44:36,806 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 14:44:36,809 [31   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 14:44:37,082 [31   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:44:37,114 [31   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:44:37,160 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:44:37,165 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 46.8539ms
+INFO  2026-03-19 14:44:37,191 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:44:37,223 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 394.3272ms
+INFO  2026-03-19 14:44:37,243 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 433.7600ms
+INFO  2026-03-19 14:44:53,258 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Role/GetAll - - -
+INFO  2026-03-19 14:44:53,265 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:44:53,271 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Dn_Cam.Roles.Dto.RoleDto]] GetAllAsync(Dn_Cam.Roles.Dto.PagedRoleResultRequestDto) on controller Dn_Cam.Roles.RoleAppService (Dn_Cam.Application).
+INFO  2026-03-19 14:44:57,481 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:44:57,503 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application) in 4223.0976ms
+INFO  2026-03-19 14:44:57,509 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:44:57,516 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Role/GetAll - 200 - application/json;+charset=utf-8 4257.4381ms
+INFO  2026-03-19 14:46:19,650 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Role/Get?Id=1 - - -
+INFO  2026-03-19 14:46:19,733 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Roles.RoleAppService.GetAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:46:19,745 [27   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Get", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Roles.Dto.RoleDto] GetAsync(Abp.Application.Services.Dto.EntityDto`1[System.Int32]) on controller Dn_Cam.Roles.RoleAppService (Dn_Cam.Application).
+INFO  2026-03-19 14:46:19,875 [38   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:46:19,880 [38   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Roles.RoleAppService.GetAsync (Dn_Cam.Application) in 130.7333ms
+INFO  2026-03-19 14:46:19,885 [38   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Roles.RoleAppService.GetAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:46:19,890 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Role/Get?Id=1 - 200 - application/json;+charset=utf-8 246.8160ms
+INFO  2026-03-19 14:47:59,434 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/services/app/Role/Create - application/json 163
+INFO  2026-03-19 14:47:59,440 [36   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:47:59,444 [36   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:47:59,449 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Roles.RoleAppService.CreateAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:47:59,455 [36   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Roles.Dto.RoleDto] CreateAsync(Dn_Cam.Roles.Dto.CreateRoleDto) on controller Dn_Cam.Roles.RoleAppService (Dn_Cam.Application).
+INFO  2026-03-19 14:47:59,915 [36   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:47:59,920 [36   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Roles.RoleAppService.CreateAsync (Dn_Cam.Application) in 460.6525ms
+INFO  2026-03-19 14:47:59,923 [36   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Roles.RoleAppService.CreateAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:47:59,927 [36   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/services/app/Role/Create - 200 - application/json;+charset=utf-8 500.3497ms
+INFO  2026-03-19 14:49:47,394 [41   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/services/app/User/Create - application/json 184
+INFO  2026-03-19 14:49:47,399 [41   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:49:47,404 [41   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:49:47,411 [41   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Users.UserAppService.CreateAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:49:47,423 [41   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Users.Dto.UserDto] CreateAsync(Dn_Cam.Users.Dto.CreateUserDto) on controller Dn_Cam.Users.UserAppService (Dn_Cam.Application).
+INFO  2026-03-19 14:49:48,799 [40   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:49:48,832 [40   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Users.UserAppService.CreateAsync (Dn_Cam.Application) in 1402.8521ms
+INFO  2026-03-19 14:49:48,837 [40   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Users.UserAppService.CreateAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:49:48,844 [40   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/services/app/User/Create - 200 - application/json;+charset=utf-8 1467.2120ms
+INFO  2026-03-19 14:53:31,024 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:53:31,119 [41   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 67.5623ms
+INFO  2026-03-19 14:53:31,167 [41   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - - -
+INFO  2026-03-19 14:53:31,175 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - - -
+INFO  2026-03-19 14:53:31,238 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 14:53:31,250 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 14:53:31,262 [3    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 54.1166ms
+INFO  2026-03-19 14:53:31,304 [41   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.js was not modified
+INFO  2026-03-19 14:53:31,315 [38   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger/ui/abp.swagger.js was not modified
+INFO  2026-03-19 14:53:31,324 [41   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.js - 304 - text/javascript 190.3019ms
+INFO  2026-03-19 14:53:31,328 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/ui/abp.swagger.js - 304 - text/javascript 157.2205ms
+INFO  2026-03-19 14:53:31,341 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 90.8732ms
+INFO  2026-03-19 14:53:31,483 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 14:53:31,529 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 14:53:31,569 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:53:31,611 [25   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:53:31,671 [25   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:53:31,676 [25   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 60.8421ms
+INFO  2026-03-19 14:53:31,681 [25   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:53:31,719 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 206.9836ms
+INFO  2026-03-19 14:53:31,732 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 252.6426ms
+INFO  2026-03-19 14:53:44,559 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - application/json 54
+INFO  2026-03-19 14:53:44,593 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:53:44,601 [12   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:53:44,606 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:53:44,621 [12   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Models.TokenAuth.AuthenticateResultModel] Authenticate(Dn_Cam.Models.TokenAuth.AuthenticateModel) on controller Dn_Cam.Controllers.TokenAuthController (Dn_Cam.Web.Core).
+INFO  2026-03-19 14:53:44,975 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:53:44,980 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core) in 354.8697ms
+INFO  2026-03-19 14:53:44,983 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:53:44,989 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - 200 - application/json;+charset=utf-8 428.7258ms
+INFO  2026-03-19 14:53:45,098 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:53:45,330 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 116.8754ms
+INFO  2026-03-19 14:53:45,335 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 14:53:45,341 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 14:53:45,475 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 21.1121ms
+INFO  2026-03-19 14:53:45,607 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 217.6456ms
+INFO  2026-03-19 14:53:45,639 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 14:53:45,789 [25   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 14:53:45,916 [38   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:53:46,022 [38   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:53:46,128 [38   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:53:46,159 [38   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 106.0037ms
+INFO  2026-03-19 14:53:46,211 [38   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:53:46,353 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 605.7937ms
+INFO  2026-03-19 14:53:46,411 [38   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 640.7927ms
+INFO  2026-03-19 14:55:03,541 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/api/services/app/Role/GetAll - - -
+INFO  2026-03-19 14:55:03,547 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:55:03,554 [30   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "GetAll", controller = "Role"}. Executing controller action with signature System.Threading.Tasks.Task`1[Abp.Application.Services.Dto.PagedResultDto`1[Dn_Cam.Roles.Dto.RoleDto]] GetAllAsync(Dn_Cam.Roles.Dto.PagedRoleResultRequestDto) on controller Dn_Cam.Roles.RoleAppService (Dn_Cam.Application).
+WARN  2026-03-19 14:55:03,681 [12   ] Mvc.ExceptionHandling.AbpExceptionFilter - Required permissions are not granted. At least one of these permissions must be granted: Roles
+Abp.Authorization.AbpAuthorizationException: Required permissions are not granted. At least one of these permissions must be granted: Roles
+   at Abp.Authorization.PermissionCheckerExtensions.AuthorizeAsync(IPermissionChecker permissionChecker, Boolean requireAll, String[] permissionNames)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(IEnumerable`1 authorizeAttributes)
+   at Abp.Authorization.AuthorizationHelper.CheckPermissionsAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationHelper.AuthorizeAsync(MethodInfo methodInfo, Type type)
+   at Abp.Authorization.AuthorizationInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at lambda_method1844(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2026-03-19 14:55:03,687 [12   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:55:03,692 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application) in 134.3808ms
+INFO  2026-03-19 14:55:03,696 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Roles.RoleAppService.GetAllAsync (Dn_Cam.Application)'
+INFO  2026-03-19 14:55:03,700 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/api/services/app/Role/GetAll - 403 - application/json;+charset=utf-8 160.1242ms
+INFO  2026-03-19 14:56:07,052 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:56:07,081 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 27.4976ms
+INFO  2026-03-19 14:56:07,165 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 14:56:07,168 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 14:56:07,172 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 3.8908ms
+INFO  2026-03-19 14:56:07,184 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 19.8636ms
+INFO  2026-03-19 14:56:07,226 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 14:56:07,231 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:56:07,239 [30   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:56:07,259 [30   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:56:07,269 [30   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 20.5068ms
+INFO  2026-03-19 14:56:07,273 [30   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:56:07,277 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 14:56:07,312 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 54.3644ms
+INFO  2026-03-19 14:56:07,351 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 70.4404ms
+INFO  2026-03-19 14:56:19,482 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - application/json 54
+INFO  2026-03-19 14:56:19,485 [28   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2026-03-19 14:56:19,489 [28   ] pNetCore.Cors.Infrastructure.CorsService - Request origin https://localhost:44311 does not have permission to access the resource.
+INFO  2026-03-19 14:56:19,493 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:56:19,498 [28   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Authenticate", controller = "TokenAuth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Dn_Cam.Models.TokenAuth.AuthenticateResultModel] Authenticate(Dn_Cam.Models.TokenAuth.AuthenticateModel) on controller Dn_Cam.Controllers.TokenAuthController (Dn_Cam.Web.Core).
+INFO  2026-03-19 14:56:19,812 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:56:19,816 [28   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core) in 313.9307ms
+INFO  2026-03-19 14:56:19,819 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Controllers.TokenAuthController.Authenticate (Dn_Cam.Web.Core)'
+INFO  2026-03-19 14:56:19,843 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 POST https://localhost:44311/api/TokenAuth/Authenticate - 200 - application/json;+charset=utf-8 340.9188ms
+INFO  2026-03-19 14:56:19,848 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:56:19,863 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 11.2228ms
+INFO  2026-03-19 14:56:19,895 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 14:56:19,920 [30   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 14:56:19,923 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 35.5566ms
+INFO  2026-03-19 14:56:19,936 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 40.6179ms
+INFO  2026-03-19 14:56:19,992 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 14:56:19,996 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:56:20,002 [29   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:56:20,037 [28   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:56:20,041 [28   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 36.3327ms
+INFO  2026-03-19 14:56:20,045 [28   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:56:20,048 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 14:56:20,051 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 59.1208ms
+INFO  2026-03-19 14:56:20,067 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 19.7815ms
+INFO  2026-03-19 14:56:21,856 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/index.html - - -
+INFO  2026-03-19 14:56:21,863 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/index.html - 200 - text/html;charset=utf-8 6.8476ms
+INFO  2026-03-19 14:56:21,904 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_vs/browserLink - - -
+INFO  2026-03-19 14:56:21,907 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - - -
+INFO  2026-03-19 14:56:21,913 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript;+charset=utf-8 3.5613ms
+INFO  2026-03-19 14:56:21,925 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 20.7735ms
+INFO  2026-03-19 14:56:21,935 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - - -
+INFO  2026-03-19 14:56:21,939 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:56:21,943 [29   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Dn_Cam.Web.Host.Controllers.AntiForgeryController (Dn_Cam.Web.Host).
+INFO  2026-03-19 14:56:21,956 [29   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2026-03-19 14:56:21,959 [29   ] c.Infrastructure.ControllerActionInvoker - Executed action Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host) in 13.3831ms
+INFO  2026-03-19 14:56:21,963 [29   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Dn_Cam.Web.Host.Controllers.AntiForgeryController.SetCookie (Dn_Cam.Web.Host)'
+INFO  2026-03-19 14:56:21,966 [28   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - - -
+INFO  2026-03-19 14:56:21,967 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/AntiForgery/SetCookie - 200 - application/json;+charset=utf-8 33.3218ms
+INFO  2026-03-19 14:56:21,985 [29   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44311/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 18.7045ms

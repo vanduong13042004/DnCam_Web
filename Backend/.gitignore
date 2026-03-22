@@ -254,3 +254,4 @@ paket-files/
 src/Dn_Cam.Web.Mvc/secrets.json
 src/Dn_Cam.Web.Host/secrets.json
 src/Dn_Cam.Migrator/secrets.json
+**/App_Data/Logs/*.txt

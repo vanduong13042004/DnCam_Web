@@ -4,6 +4,7 @@ using Dn_Cam.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Dn_Cam.Migrations
 {
     [DbContext(typeof(Dn_CamDbContext))]
-    partial class Dn_CamDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260323082002_Add_Table_OrderItems")]
+    partial class Add_Table_OrderItems
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

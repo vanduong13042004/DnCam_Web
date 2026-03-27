@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace Dn_Cam.CartItems
 {
-    public class CartItemAddService : AsyncCrudAppService<CartItem, CartItemDto, int, PagedAndSortedResultRequestDto, CreateCartItemDto, CartItemDto>, ICartItemAppService
+    public class CartItemAppService : AsyncCrudAppService<CartItem, CartItemDto, int, PagedAndSortedResultRequestDto, CreateCartItemDto, CartItemDto>, ICartItemAppService
     {
-        public CartItemAddService(IRepository<CartItem, int> repository) : base(repository)
+        public CartItemAppService(IRepository<CartItem, int> repository) : base(repository)
         {
         }
     }

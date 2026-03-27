@@ -11,5 +11,6 @@ namespace Dn_Cam.Orders
 {
     public interface IOrderAppService : IAsyncCrudAppService <OrderDto, int, PagedAndSortedResultRequestDto, CreateOrderDto, OrderDto>
     {
+        Task<List<OrderDto>> GetMyOrdersAsync();
     }
 }

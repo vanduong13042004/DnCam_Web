@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Dn_Cam.ProductSpecifications
 {
-    public class ProductSpecificationAppService : AsyncCrudAppService<ProductSpecification, ProductSpecificationDto, int, PagedAndSortedResultRequestDto, CreateProductSpecificationDto, ProductSpecificationDto>
+    public class ProductSpecificationAppService : AsyncCrudAppService<ProductSpecification, ProductSpecificationDto, int, PagedAndSortedResultRequestDto, CreateProductSpecificationDto, ProductSpecificationDto>, IProductSpecificationAppService
     {
         public ProductSpecificationAppService(IRepository<ProductSpecification, int> repository) : base(repository)
         {

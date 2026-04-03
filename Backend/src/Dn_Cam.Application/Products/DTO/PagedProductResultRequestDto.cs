@@ -1,6 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 
-namespace Dn_Cam.Products.Dto
+namespace Dn_Cam.Products.DTO
 {
     public class PagedProductResultRequestDto : PagedAndSortedResultRequestDto
     {

@@ -62,7 +62,7 @@ namespace Dn_Cam.Orders
                     Quantity = item.Quantity,
                     UnitPrice = product.Price 
                 };
-                totalMoney += (orderItem.UnitPrice * orderItem.Quantity);
+                totalMoney += orderItem.UnitPrice * orderItem.Quantity;
                 await _orderItemRepository.InsertAsync(orderItem);
                 await _cartItemRepository.DeleteAsync(item.Id);
             }

@@ -1,6 +1,5 @@
 ﻿using Abp.Application.Services;
-using Dn_Cam.Products.Dto;
-using Dn_Cam.Products.DTO; 
+using Dn_Cam.Products.DTO;
 
 namespace Dn_Cam.Products
 {

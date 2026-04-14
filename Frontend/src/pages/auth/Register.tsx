@@ -1,41 +1,50 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
-import axiosClient from "../../services/axiosClient";
+import accountService from "../../services/accountService";
 
 const Register = () => {
     const [name, setName] = useState('');
-    const [surename, setsureName] = useState('');
+    const [surname, setSurname] = useState('');
     const [emailaddress, setEmailaddress] = useState('');
     const [userName, setUserName] = useState('');
-    const [password, setPassWord] = useState('');
-    const [confirmPassword, setconfirmPassword] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
     const navigate = useNavigate();
 
     const handleRegister = async (e: React.SyntheticEvent) => {
         e.preventDefault();
+        setError('');
 
-        try {
-            const response: any = await axiosClient.post('/api/services/app/Account/Register', {
-                name: name,
-                surname: surename,
-                emailAddress: emailaddress,
-                userName: userName,
-                password: password,
-                // roleNames: ['user'],
-            });
-            alert('Đăng ký tài khoản thành công hãy đăng nhập')
-            navigate('/login');
-        } catch (error) {
-            console.error('loii dang ky', error);
-            alert('looi dang ky')
+        // Validate passwords match
+        if (password !== confirmPassword) {
+            setError('Mật khẩu không trùng khớp!');
+            return;
         }
 
+        // Validate required fields
+        if (!name || !surname || !emailaddress || !userName || !password) {
+            setError('Vui lòng điền đầy đủ các trường!');
+            return;
+        }
+
+        setLoading(true);
+
+        try {
+            await accountService.registerUser(name, surname, emailaddress, userName, password);
+            navigate('/login');
+        } catch (err: any) {
+            setError(err.message || 'Đăng ký không thành công, vui lòng thử lại');
+        } finally {
+            setLoading(false);
+        }
     }
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100">
             <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
                 <h2 className="text-3xl font-bold text-center text-blue-600 mb-8">
-                    Đăng nhập DNCam
+                    Đăng ký DNCam
                 </h2>
 
                 {/* Thẻ form gọi hàm handleLogin khi người dùng bấm Enter hoặc nút Submit */}
@@ -43,11 +52,11 @@ const Register = () => {
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">Tên</label>
                         <input
-                            type="name"
+                            type="text"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="admin@dncam.com"
+                            placeholder="Nguyễn"
                             required
                         />
                     </div>
@@ -55,9 +64,9 @@ const Register = () => {
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">Họ</label>
                         <input
-                            type="setsureName"
-                            value={surename}
-                            onChange={(e) => setsureName(e.target.value)}
+                            type="text"
+                            value={surname}
+                            onChange={(e) => setSurname(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             required
                         />
@@ -65,7 +74,7 @@ const Register = () => {
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">Tên đăng nhập</label>
                         <input
-                            type="userName"
+                            type="text"
                             value={userName}
                             onChange={(e) => setUserName(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -75,7 +84,7 @@ const Register = () => {
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">Email</label>
                         <input
-                            type="Emailaddress"
+                            type="email"
                             value={emailaddress}
                             onChange={(e) => setEmailaddress(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -87,9 +96,9 @@ const Register = () => {
                         <input
                             type="password"
                             value={password}
-                            onChange={(e) => setPassWord(e.target.value)}
+                            onChange={(e) => setPassword(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="••••••••"
+                            placeholder="•••••••"
                             required
                         />
                     </div>
@@ -98,18 +107,25 @@ const Register = () => {
                         <input
                             type="password"
                             value={confirmPassword}
-                            onChange={(e) => setconfirmPassword(e.target.value)}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            placeholder="••••••••"
+                            placeholder="•••••••"
                             required
                         />
                     </div>
 
+                    {error && (
+                        <div className="p-3 bg-red-100 border border-red-400 text-red-700 rounded-md">
+                            {error}
+                        </div>
+                    )}
+
                     <button
                         type="submit"
-                        className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
+                        disabled={loading}
+                        className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
                     >
-                        Đăng ký
+                        {loading ? 'Đang đăng ký...' : 'Đăng ký'}
                     </button>
                 </form>
             </div>

@@ -5,6 +5,7 @@ using Abp.Domain.Repositories;
 using Dn_Cam.CartItems.DTO;
 using Dn_Cam.Entities;
 using Microsoft.EntityFrameworkCore; // Bắt buộc phải có using này để dùng ToListAsync() và FirstOrDefaultAsync()
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -40,7 +41,6 @@ namespace Dn_Cam.CartItems
 
             // 2. Tìm cái Giỏ hàng (Cart) của người này thông qua IRepository<Cart>
             var myCart = await _cartRepository.FirstOrDefaultAsync(c => c.UserId == currentUserId.Value);
-
             if (myCart == null)
             {
                 return new List<CartItemDto>(); // Chưa có giỏ hàng thì cũng trả về rỗng
@@ -54,10 +54,10 @@ namespace Dn_Cam.CartItems
                 {
                     Id = ci.Id,
                     ProductId = ci.ProductId,
-                    Quantity = ci.Quantity
-                    // Tạm thời comment các trường chưa có để tránh lỗi
-                    // ProductName = ci.Product.Name,
-                    // Price = ci.Product.Price
+                    CartId = ci.CartId,
+                    Quantity = ci.Quantity,
+                    ProductName = ci.Product.Name,
+                    ProductPrice = ci.Product.Price,
                 })
                 .ToListAsync();
 

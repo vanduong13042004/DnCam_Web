@@ -1,51 +1,36 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { CartStore } from '../../stores/CartStore';
-import axiosClient from '../../services/axiosClient';
+import { useCartActions, useTotalItemCarts } from '../../stores/cartStore';
+// import { CartStore } from '../../stores/CartStore';
 
 const Header = () => {
   const navigate = useNavigate();
   const token = localStorage.getItem('access_token');
   const isLoggedIn = !!token;// !! chuyển về boolean true nếu có
+  const cartActions = useCartActions();
+  const totalItemCart = useTotalItemCarts();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  console.log(isLoggedIn);
+  // const cartItems = CartStore((state) => state.items);
+  // const fetchCart = CartStore((state) => state.fetchCart)
   const handleLogout = () => {
     localStorage.removeItem('access_token');
-    setIsDropdownOpen(false);
+    cartActions.clearCart();
+    // setIsDropdownOpen(false);
     navigate('/');
   }
-  const cartItems = CartStore((state) => state.items);
-  const setCartItems = CartStore((state) => state.setCartItems)
   useEffect(() => {
-    // Chỉ gọi API lấy giỏ hàng nếu người dùng ĐÃ đăng nhập
     if (isLoggedIn) {
-      const fetchCartData = async () => {
-        try {
-          const response: any = await axiosClient.get('/api/services/app/CartItem/GetMyCartItems');
-          
-          const itemsFromDB = response.result;
-          
-          if (itemsFromDB) {
-             setCartItems(itemsFromDB);
-          }
-        } catch (error) {
-          console.error('Lỗi khi lấy giỏ hàng từ Database:', error);
-        }
-      };
-
-      fetchCartData();
+      cartActions.fetchCart()
     }
   }, [isLoggedIn]);
   // Dùng hàm reduce để cộng dồn tổng số lượng (Ví dụ: 2 Canon + 1 Sony = 3)
-  const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+  // const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
   return (
     <header className="bg-white shadow-md p-4 flex justify-between items-center">
-      {/* Logo */}
       <Link to="/" className="text-2xl font-bold text-blue-800">
-        📷 DNCam Store
+        DNCam Store
       </Link>
-
-      {/* Menu điều hướng */}
+      {/* menu dieu huong */}
       <nav className="space-x-6">
         <Link to="/" className="font-medium hover:text-blue-600 transition-colors">
           Trang chủ
@@ -65,10 +50,10 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
               
-              {/* Nếu có đồ trong giỏ thì mới hiện cục màu đỏ */}
-              {totalItems > 0 && (
+              {/* hiện cục số sp màu đỏ nếu có sp ở giỏ */}
+              {totalItemCart > 0 && (
                 <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center animate-bounce">
-                  {totalItems}
+                  {totalItemCart}
                 </span>
               )}
             </Link>

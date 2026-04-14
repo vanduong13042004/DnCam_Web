@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import cloudinaryService from '../../services/cloudinaryService';
+import { useState } from "react";
+import cloudinaryService from "../../services/cloudinaryService";
 
 function App1() {
   const [testImage, setTestImage] = useState<string>("");

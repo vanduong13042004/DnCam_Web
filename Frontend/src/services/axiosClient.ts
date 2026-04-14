@@ -12,12 +12,12 @@ const axiosClient = axios.create({
 //trc khi gui request
 axiosClient.interceptors.request.use(
   (config) => {
-  const token = localStorage.getItem('access_token')
-  if (token && config.headers) {
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  return config;
-},
+    const token = localStorage.getItem('access_token')
+    if (token && config.headers) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
   (error) => {
     return Promise.reject(error);
   }
@@ -25,9 +25,9 @@ axiosClient.interceptors.request.use(
 //nhan response
 axiosClient.interceptors.response.use(
   (response) => {
-  
-  return response.data;
-},
+
+    return response.data;
+  },
   (error) => {
     const status = error.response?.status;
 
@@ -38,10 +38,11 @@ axiosClient.interceptors.response.use(
       alert('Bạn không có quyền thực hiện thao tác này!');
     }
     else if (status === 500) {
-      alert('Hệ thống đang bảo trì hoặc có lỗi xảy ra!');
+      if (error.response?.status === 500) {
+        return Promise.reject(error)
+      }
+      return Promise.reject(error)
     }
-
-    return Promise.reject(error);
   }
 )
 export default axiosClient;

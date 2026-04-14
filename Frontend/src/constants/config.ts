@@ -3,7 +3,7 @@ export const CLOUDINARY_CONFIG = {
     PRESET: import.meta.env.VITE_CLOUDINARY_PRESET
 };
 export const CONFIG = {
-  API_BASE_URL: 'https://localhost:44311', 
+  API_BASE_URL: import.meta.env.VITE_API_BASE_URL , 
 };
 export const SHIPPING_FEE = 30000;
 

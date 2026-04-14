@@ -1,29 +1,31 @@
 import axiosClient from "./axiosClient";
-
+export interface RegisterUserDto {
+    name: string;
+    surname: string;
+    emailAddress: string;
+    userName: string;
+    password: string;
+    // roleNames?: string[]; // Thêm trường này nếu muốn gửi thông tin về vai trò
+}
+export interface LoginUserDto {
+    userNameOrEmailAddress: string;
+    password: string;
+}
 const accountService = {
-    registerUser: async (name: string, surname: string, emailaddress: string, userName: string, password: string): Promise<void> => {
+    registerUser: async (data: RegisterUserDto) => {
         try {
-            const response = await axiosClient.post('/api/services/app/Account/Register', {
-                name: name,
-                surname: surname,
-                emailAddress: emailaddress,
-                userName: userName,
-                password: password,
-                // roleNames: ['user'],
-            });
-            return response.data;
+            const response = await axiosClient.post('/api/services/app/Account/Register',data);
+            console.log('Đăng ký thành công:', response);
         } catch (error: any) {
             const errorMessage = error.response?.data?.error?.message || 'Lỗi đăng ký tài khoản';
             console.error('Lỗi đăng ký:', error);
             throw new Error(errorMessage);
         }
     },
-    loginUser: async (userNameOrEmailAddress: string, password: string): Promise<void> => {
+    loginUser: async (data: LoginUserDto) => {
         try {
-            const response: any = await axiosClient.post('/api/TokenAuth/Authenticate', {
-                userNameOrEmailAddress: userNameOrEmailAddress,
-                password: password,
-            });
+            const response: any = await axiosClient.post('/api/TokenAuth/Authenticate', data);
+            console.log('Đăng nhập thành công:', response);
             localStorage.setItem('access_token', response.result.accessToken);
             return response;
         } catch (error: any) {

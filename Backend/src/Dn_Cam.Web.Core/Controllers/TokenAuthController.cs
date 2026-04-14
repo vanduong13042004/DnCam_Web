@@ -2,6 +2,7 @@
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
 using Abp.Runtime.Security;
+using Abp.UI;
 using Dn_Cam.Authentication.JwtBearer;
 using Dn_Cam.Authorization;
 using Dn_Cam.Authorization.Users;
@@ -75,8 +76,18 @@ namespace Dn_Cam.Controllers
             {
                 case AbpLoginResultType.Success:
                     return loginResult;
+
+                case AbpLoginResultType.InvalidUserNameOrEmailAddress:
+                    throw new UserFriendlyException("Tài khoản không tồn tại, vui lòng đăng ký!");
+
+                case AbpLoginResultType.InvalidPassword:
+                    throw new UserFriendlyException("Sai mật khẩu!");
+
+                case AbpLoginResultType.UserIsNotActive:
+                    throw new UserFriendlyException("Tài khoản chưa được kích hoạt!");
+
                 default:
-                    throw _abpLoginResultTypeHelper.CreateExceptionForFailedLoginAttempt(loginResult.Result, usernameOrEmailAddress, tenancyName);
+                    throw new UserFriendlyException("Đăng nhập thất bại!");
             }
         }
 

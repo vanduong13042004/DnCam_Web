@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import accountService from '../../services/accountService';
+import accountService, { type LoginUserDto } from '../../services/accountService';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -13,7 +13,11 @@ const Login = () => {
     e.preventDefault();
     setLoading(true)
     try {
-      await accountService.loginUser(email, password);
+      let item : LoginUserDto = {
+        userNameOrEmailAddress: email,
+        password: password
+      }
+      await accountService.loginUser(item);
       navigate('/');
     }
     catch (error: any) {
@@ -63,7 +67,7 @@ const Login = () => {
             type="submit"
             className="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition-colors"
           >
-            Đăng Nhập
+           {loading? 'Đăng Nhập... ': 'Đăng Nhập'} 
           </button>
         </form>
 

@@ -10,12 +10,19 @@ export interface CartItemDto{
     productStockQuantity: number;
     selected: boolean;
 }
+
+interface GetCartItemsResponse {
+    result: CartItemDto[];
+}
+
 const cartService = {
     getMyCartItems: async (): Promise<CartItemDto[]> => {
         try {
-            const response: any = await axiosClient.get('/api/services/app/CartItem/GetMyCartItems');
+            const response : GetCartItemsResponse = await axiosClient.get('/api/services/app/CartItem/GetMyCartItems') ;
+            console.log('Giỏ hàng của tôi:', response.result);
             return response.result;
-        } catch (error) {
+        } catch (error: unknown) {
+            console.error('Lỗi khi lấy giỏ hàng:', error);
             return [];
         }
     },

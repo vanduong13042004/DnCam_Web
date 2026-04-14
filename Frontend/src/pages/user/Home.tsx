@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Play } from 'lucide-react';
 import image1 from '../../assets/image.png';
-import productService, { type ProductDto } from '../../services/productService';
+import productService, { type ProductDto } from '../../services/productService'
 function Home() {
   // 1. Tạo "cái rổ" để đựng máy ảnh lấy từ C# về
   const [products, setProducts] = useState<ProductDto[]>([]);

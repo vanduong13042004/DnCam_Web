@@ -1,11 +1,11 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
-import accountService from "../../services/accountService";
+import accountService, { type RegisterUserDto } from "../../services/accountService";
 
 const Register = () => {
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
-    const [emailaddress, setEmailaddress] = useState('');
+    const [emailAddress, setEmailaddress] = useState('');
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -24,7 +24,7 @@ const Register = () => {
         }
 
         // Validate required fields
-        if (!name || !surname || !emailaddress || !userName || !password) {
+        if (!name || !surname || !emailAddress || !userName || !password) {
             setError('Vui lòng điền đầy đủ các trường!');
             return;
         }
@@ -32,7 +32,14 @@ const Register = () => {
         setLoading(true);
 
         try {
-            await accountService.registerUser(name, surname, emailaddress, userName, password);
+            let item: RegisterUserDto = {
+                name,
+                surname,
+                emailAddress,
+                userName,
+                password
+            };
+            await accountService.registerUser(item);
             navigate('/login');
         } catch (err: any) {
             setError(err.message || 'Đăng ký không thành công, vui lòng thử lại');
@@ -85,7 +92,7 @@ const Register = () => {
                         <label className="block text-gray-700 font-medium mb-2">Email</label>
                         <input
                             type="email"
-                            value={emailaddress}
+                            value={emailAddress}
                             onChange={(e) => setEmailaddress(e.target.value)}
                             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             required

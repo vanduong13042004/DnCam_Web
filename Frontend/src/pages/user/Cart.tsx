@@ -44,13 +44,13 @@ const Cart = () => {
                             <label className="flex items-center gap-3 cursor-pointer">
                                 <input
                                     type="checkbox"
-                                    className="w-5 h-5 accent-purple-600 rounded cursor-pointer"
+                                    className="w-5 h-5 accent-purple-600 rounded"
                                 //   checked={isAllSelected}
                                 //   onChange={handleToggleSelectAll}
                                 />
-                                <span className="font-medium cursor-pointer">Chọn tất cả ({listItiemCart.length} sản phẩm)</span>
+                                <span className="font-medium">Chọn tất cả ({listItiemCart.length} sản phẩm)</span>
                             </label>
-                            <button className="text-red-500 hover:text-red-700 font-medium cursor-pointer">
+                            <button className="text-red-500 hover:text-red-700 font-medium">
                                 🗑️ Xóa đã chọn
                             </button>
                         </div>
@@ -65,15 +65,15 @@ const Cart = () => {
                                         // checked={item.selected}
                                     onChange={() => handleToggleSelect(item.id)}
                                     />
-                                    <img src={item.productMainImage} alt={item.productName} className="w-20 h-20 object-cover rounded border" />
+                                    <img src={item.mainImage} alt={item.productName} className="w-20 h-20 object-cover rounded border" />
                                 </div>
 
                                 <div className="flex-1">
                                     <h3 className="font-semibold text-gray-800 line-clamp-2">{item.productName}</h3>
                                     <p className="text-purple-600 font-bold text-lg mt-1">
-                                        {item.productPrice.toLocaleString('vi-VN')} đ
+                                        {/* {item.ProductPrice.toLocaleString('vi-VN')} đ */}
                                     </p>
-                                    <p className="text-sm text-gray-500 mt-1">Còn lại: {item.productStockQuantity} trong kho</p>
+                                    <p className="text-sm text-gray-500 mt-1">Còn lại: {item.stockQuantity} trong kho</p>
                                 </div>
 
                                 <div className="flex flex-col items-end gap-3 mt-4 sm:mt-0">
@@ -83,22 +83,22 @@ const Cart = () => {
                                     </p>
 
                                     <div className="flex items-center gap-4">
-                                        <div className="flex items-center border rounded-md ">
+                                        <div className="flex items-center border rounded-md">
                                             <button
                                                 onClick={() => handleUpdateQuantity(item.id, item.quantity = item.quantity - 1)}
                                                 disabled={item.quantity <= 1}
-                                                className="px-3 py-1 hover:bg-gray-100 text-gray-600 font-bold disabled:opacity-50 cursor-pointer"
+                                                className="px-3 py-1 hover:bg-gray-100 text-gray-600 font-bold disabled:opacity-50"
                                             >-</button>
                                             <span className="px-4 py-1 border-x font-medium">{item.quantity}</span>
                                             <button
                                                 // onClick={() => handleUpdateQuantity(item.id, item.Quantity + 1)}
-                                                disabled={item.quantity >= item.productStockQuantity}
-                                                className="px-3 py-1 hover:bg-gray-100 text-gray-600 font-bold disabled:opacity-50 cursor-pointer"
+                                                disabled={item.quantity >= item.stockQuantity}
+                                                className="px-3 py-1 hover:bg-gray-100 text-gray-600 font-bold disabled:opacity-50"
                                             >+</button>
                                         </div>
                                         <button
                                               onClick={() => handleRemoveItem(item.id)}
-                                            className="text-red-500 hover:text-red-700 text-xl transition relative cursor-pointer"
+                                            className="text-red-500 hover:text-red-700 text-xl"
                                         >
                                             🗑️
                                         </button>

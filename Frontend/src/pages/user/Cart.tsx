@@ -44,13 +44,13 @@ const Cart = () => {
                             <label className="flex items-center gap-3 cursor-pointer">
                                 <input
                                     type="checkbox"
-                                    className="w-5 h-5 accent-purple-600 rounded"
+                                    className="w-5 h-5 accent-purple-600 rounded cursor-pointer"
                                 //   checked={isAllSelected}
                                 //   onChange={handleToggleSelectAll}
                                 />
-                                <span className="font-medium">Chọn tất cả ({listItiemCart.length} sản phẩm)</span>
+                                <span className="font-medium cursor-pointer">Chọn tất cả ({listItiemCart.length} sản phẩm)</span>
                             </label>
-                            <button className="text-red-500 hover:text-red-700 font-medium">
+                            <button className="text-red-500 hover:text-red-700 font-medium cursor-pointer">
                                 🗑️ Xóa đã chọn
                             </button>
                         </div>
@@ -71,7 +71,7 @@ const Cart = () => {
                                 <div className="flex-1">
                                     <h3 className="font-semibold text-gray-800 line-clamp-2">{item.productName}</h3>
                                     <p className="text-purple-600 font-bold text-lg mt-1">
-                                        {/* {item.ProductPrice.toLocaleString('vi-VN')} đ */}
+                                        {item.productPrice.toLocaleString('vi-VN')} đ
                                     </p>
                                     <p className="text-sm text-gray-500 mt-1">Còn lại: {item.productStockQuantity} trong kho</p>
                                 </div>
@@ -83,22 +83,22 @@ const Cart = () => {
                                     </p>
 
                                     <div className="flex items-center gap-4">
-                                        <div className="flex items-center border rounded-md">
+                                        <div className="flex items-center border rounded-md ">
                                             <button
                                                 onClick={() => handleUpdateQuantity(item.id, item.quantity = item.quantity - 1)}
                                                 disabled={item.quantity <= 1}
-                                                className="px-3 py-1 hover:bg-gray-100 text-gray-600 font-bold disabled:opacity-50"
+                                                className="px-3 py-1 hover:bg-gray-100 text-gray-600 font-bold disabled:opacity-50 cursor-pointer"
                                             >-</button>
                                             <span className="px-4 py-1 border-x font-medium">{item.quantity}</span>
                                             <button
                                                 // onClick={() => handleUpdateQuantity(item.id, item.Quantity + 1)}
                                                 disabled={item.quantity >= item.productStockQuantity}
-                                                className="px-3 py-1 hover:bg-gray-100 text-gray-600 font-bold disabled:opacity-50"
+                                                className="px-3 py-1 hover:bg-gray-100 text-gray-600 font-bold disabled:opacity-50 cursor-pointer"
                                             >+</button>
                                         </div>
                                         <button
                                               onClick={() => handleRemoveItem(item.id)}
-                                            className="text-red-500 hover:text-red-700 text-xl"
+                                            className="text-red-500 hover:text-red-700 text-xl transition relative cursor-pointer"
                                         >
                                             🗑️
                                         </button>

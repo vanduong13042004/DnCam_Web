@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Play } from 'lucide-react';
 import image1 from '../../assets/image.png';
-import productService, { type ProductDto } from '../../services/productService'
+import productService, { type ProductDto } from '../../services/productService';
 function Home() {
   // 1. Tạo "cái rổ" để đựng máy ảnh lấy từ C# về
   const [products, setProducts] = useState<ProductDto[]>([]);
@@ -30,7 +30,6 @@ function Home() {
   return (
     <div className="space-y-12 animate-fade-in">
         
-      {/* --- PHẦN BANNER GIỮ NGUYÊN (Mình ẩn đi cho code ngắn bớt nhé) --- */}
       <div className="bg-indigo-900 text-white py-16 lg:py-24 relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
         
@@ -87,7 +86,7 @@ function Home() {
                   {/* Nếu C# có trả về link ảnh thật thì nhét vào đây, tạm thời để Icon */}
                   <span className="text-5xl">📷</span>
                 </div>
-                <div className="flex-grow">
+                <div className="">
                   <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">Máy ảnh</p>
                   <h3 className="font-semibold text-lg text-gray-800 leading-tight mb-2">
                     {item.name} {/* <--- HIỂN THỊ TÊN MÁY ẢNH TỪ C# */}

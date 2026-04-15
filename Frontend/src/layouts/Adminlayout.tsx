@@ -10,7 +10,6 @@ function AdminLayout() {
 
   return (
     <div className="flex h-screen bg-gray-100">
-      {/* SIDEBAR BÊN TRÁI */}
       <aside className="w-64 bg-gray-900 text-white flex flex-col">
         <div className="h-16 flex items-center justify-center border-b border-gray-800">
           <h1 className="text-xl font-bold">⚙️ Admin Panel</h1>
@@ -27,14 +26,12 @@ function AdminLayout() {
         </div>
       </aside>
 
-      {/* CỘT PHẢI: HEADER & NỘI DUNG */}
       <div className="flex-1 flex flex-col overflow-hidden">
         <header className="h-16 bg-white shadow-sm flex items-center px-6 justify-between">
           <h2 className="text-lg font-semibold text-gray-800">Hệ thống Quản trị</h2>
           <span className="text-sm text-gray-500">Xin chào, Admin</span>
         </header>
         
-        {/* RUỘT THAY ĐỔI CỦA ADMIN SẼ NẰM Ở ĐÂY */}
         <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100 p-6">
           <Outlet />
         </main>

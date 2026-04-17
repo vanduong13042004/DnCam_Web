@@ -27,7 +27,7 @@ namespace Dn_Cam.CartItems
         }
 
         [AbpAuthorize] // Bắt buộc phải đăng nhập mới được gọi hàm này
-        public async Task<List<CartItemDto>> GetMyCartItemsAsync()
+        public async Task<List<CartItemDto>> GetMyCartAsync()
 
         {
 
@@ -57,7 +57,9 @@ namespace Dn_Cam.CartItems
                     CartId = ci.CartId,
                     Quantity = ci.Quantity,
                     ProductName = ci.Product.Name,
+                    MainImage = ci.Product.MainImage,
                     ProductPrice = ci.Product.Price,
+                    StockQuantity = ci.Product.StockQuantity,
                 })
                 .ToListAsync();
 

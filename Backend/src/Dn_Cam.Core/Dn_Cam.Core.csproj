@@ -15,16 +15,16 @@
     <EmbeddedResource Include="Localization\SourceFiles\*.xml" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
     <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
     <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder1\**" />
     <None Remove="NewFolder\**" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Abp.AutoMapper" Version="10.2.0" />
     <PackageReference Include="Abp.ZeroCore.EntityFrameworkCore" Version="10.2.0" />
     <PackageReference Include="Castle.Windsor.MsDependencyInjection" Version="4.1.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
 </Project>

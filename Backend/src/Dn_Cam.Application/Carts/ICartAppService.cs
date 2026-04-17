@@ -8,5 +8,6 @@ namespace Dn_Cam.Carts
     {
         // Khai báo một hàm để thêm đồ vào giỏ
         Task AddToCartAsync(AddToCartDto input);
+        Task<CartDetailDto> GetMyCartAsync();
     }
 }

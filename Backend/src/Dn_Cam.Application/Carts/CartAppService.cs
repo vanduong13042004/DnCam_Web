@@ -93,13 +93,20 @@ namespace Dn_Cam.Carts
                 }).ToListAsync();
 
             // 4. Tính tổng tiền của cả giỏ hàng (bằng LINQ Sum)
-            decimal total = items.Sum(i => i.Quantity * i.ProductPrice);
-
+            decimal itemsTotal = items.Sum(i => i.Quantity * i.ProductPrice);
+            decimal ShippingFee = 30000;
+            if (itemsTotal > 5000000)
+            {
+                ShippingFee = 0;
+            }
+            decimal finalTotal = itemsTotal + ShippingFee;
             // 5. Đóng gói tất cả vào CartDetailDto (Master) và trả về
             return new CartDetailDto
             {
                 Id = myCart.Id,
-                TotalAmount = total,
+                ItemsTotal = itemsTotal,
+                TotalAmount = finalTotal,
+                ShippingFee = ShippingFee,
                 Items = items
             };
         }

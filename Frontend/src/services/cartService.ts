@@ -1,5 +1,5 @@
 import axiosClient from "./axiosClient";
-export interface CartItemDto{
+export interface CartDetailDto{
     id: number;
     cartId: number;
     productId: number;
@@ -8,22 +8,33 @@ export interface CartItemDto{
     productPrice: number;
     mainImage: string;
     stockQuantity: number;
-    selected: boolean;
+    selected?: boolean;
 }
 
-interface GetCartItemsResponse {
-    result: CartItemDto[];
+// Nested DTO từ backend
+export interface CartResponseDto {
+    id: number;
+    itemsTotal: number;
+    shippingFee: number;
+    totalAmount: number;
+    items: CartDetailDto[];
 }
 
 const cartService = {
-    getMyCartItems: async (): Promise<CartItemDto[]> => {
+    getMyCartItems: async  (): Promise<CartResponseDto> => {
         try {
-            const response : GetCartItemsResponse = await axiosClient.get('/api/services/app/CartItem/GetMyCart') ;
-            console.log('Giỏ hàng của tôi getmycartItems:', response.result);
+            const response : any = await axiosClient.get('/api/services/app/Cart/GetMyCart');
+            console.log('Giỏ hàng của tôi getmycart:', response);
             return response.result;
         } catch (error: unknown) {
             console.error('Lỗi khi lấy giỏ hàng:', error);
-            return [];
+            return {
+                id: 0,
+                itemsTotal: 0,
+                shippingFee: 0,
+                totalAmount: 0,
+                items: []
+            };
         }
     },
     addToCart: async(productId: number): Promise<void> =>{
@@ -39,6 +50,7 @@ const cartService = {
             }}
         )
     }
+
     
 }
 export default cartService;

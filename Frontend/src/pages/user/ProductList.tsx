@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import axiosClient from "../../services/axiosClient";
-import type { ProductDto } from "../../services/productService";
-import CartStore, { useCartActions } from "../../stores/cartStore";
-import productService from "../../services/productService";
-import image from '../../assets/image.png';
+import type { ProductDto } from "../../services/productService1";
+import CartStore, { useCartActions } from "../../stores/cartStore1";
+import productService from "../../services/productService1";
 function ProductList() {
   const [products, setProducts] = useState<ProductDto[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -26,7 +24,7 @@ function ProductList() {
   const handleAddToCart = async (productId: number) => {
     try {
       // Gửi request POST xuống Backend 
-      cartActions.addToCart(productId);
+      await cartActions.addToCart(productId);
 
       // await cartActions.fetchCart();
 

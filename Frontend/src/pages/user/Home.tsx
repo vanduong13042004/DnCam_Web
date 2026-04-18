@@ -3,11 +3,9 @@ import { Play } from 'lucide-react';
 import image1 from '../../assets/image.png';
 import productService, { type ProductDto } from '../../services/productService';
 function Home() {
-  // 1. Tạo "cái rổ" để đựng máy ảnh lấy từ C# về
   const [products, setProducts] = useState<ProductDto[]>([]);
-  const [isLoading, setIsLoading] = useState(true); // Biến báo hiệu đang tải
+  const [isLoading, setIsLoading] = useState(true); 
 
-  // 2. Gọi API ngay khi trang vừa load xong
   useEffect(() => {
     const fetchProducts = async () => {
       try {

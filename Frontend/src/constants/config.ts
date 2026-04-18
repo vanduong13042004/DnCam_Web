@@ -7,15 +7,16 @@ export const CONFIG = {
 };
 export const SHIPPING_FEE = 30000;
 
-export const ORDER_STATUS: Record<number, string> = {
-    0: 'Chờ xác nhận',
-    1: 'Đang xử lý',
-    2: 'Đang giao',
-    3: 'Hoàn thành',
-    4: 'Đã hủy'
-};
+export const OrderStatusEnum = {
+    Pending: 1,
+    Processing: 2,
+    Shipping: 3,
+    Completed: 4,
+    Canceled: 5
+} as const;
 
-export const PAYMENT_METHOD: Record<number, string> = {
-    0: 'Thanh toán khi nhận hàng (COD)',
-    1: 'Chuyển khoản ngân hàng'
-};
+export const PaymentMethodEnum = {
+    COD: 1,
+    BankTransfer: 2,
+    VNPay: 3
+} as const;

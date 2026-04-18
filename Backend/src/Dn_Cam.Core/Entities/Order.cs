@@ -6,6 +6,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Dn_Cam.Entities
 {
+    public enum PaymentMethodType
+    {
+        COD = 1,          // Thanh toán khi nhận hàng
+        BankTransfer = 2, // Chuyển khoản
+        VNPay = 3
+    }
+
+    public enum OrderStatus
+    {
+        Pending = 1,    // Chờ xác nhận
+        Processing = 2, // Đang xử lý
+        Shipping = 3,   // Đang giao
+        Completed = 4,  // Hoàn thành
+        Canceled = 5    // Đã hủy
+    }
     [Table("Orders")]
     public class Order : FullAuditedEntity<int>
     {
@@ -28,6 +43,10 @@ namespace Dn_Cam.Entities
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal TotalAmount { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal ItemsTotal { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal ShippingFee { get; set; }
 
         public int PaymentMethod { get; set; }
 

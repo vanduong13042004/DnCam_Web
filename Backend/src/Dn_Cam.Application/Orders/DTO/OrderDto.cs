@@ -19,6 +19,8 @@ namespace Dn_Cam.Orders.DTO
         public string PhoneNumber { get; set; }
         public string ShippingAddress { get; set; }
         public decimal TotalAmount { get; set; }
+        public decimal ShippingFee { get; set; }
+        public decimal ItemsTotal { get; set; }
         public int PaymentMethod { get; set; }
         public string Note { get; set; }
         public int Status { get; set; }

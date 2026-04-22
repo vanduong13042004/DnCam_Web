@@ -9,6 +9,7 @@ export interface CartDetailDto{
     mainImage: string;
     stockQuantity: number;
     selected?: boolean;
+    itemsTotal: number
 }
 
 // Nested DTO từ backend
@@ -43,13 +44,6 @@ const cartService = {
         quantity: 1,
       });
     },
-    deleteItem: async (productId: number): Promise<void>  =>{
-       await axiosClient.delete('/api/services/app/CartItem/Delete',
-            {params:{
-                id: productId
-            }}
-        )
-    }
 
     
 }

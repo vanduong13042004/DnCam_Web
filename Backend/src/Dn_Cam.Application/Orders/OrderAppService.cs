@@ -17,6 +17,7 @@ namespace Dn_Cam.Orders
         private readonly IRepository<Product, int> _productRepository;
         private readonly IRepository<Cart, int> _cartRepository;
         private readonly IRepository<CartItem, int> _cartItemRepository;
+
         public OrderAppService(
             IRepository<Order, int> repository,
             IRepository<OrderItem, int> orderItemRepository,
@@ -29,6 +30,7 @@ namespace Dn_Cam.Orders
             _cartRepository = cartRepository;
             _cartItemRepository = cartItemRepository;
         }
+
         public override async Task<OrderDto> CreateAsync(CreateOrderDto input)
         {
             if (!AbpSession.UserId.HasValue)
@@ -36,38 +38,55 @@ namespace Dn_Cam.Orders
                 throw new UserFriendlyException("Bạn phải đăng nhập để đặt hàng!");
             }
             int currentUserId = (int)AbpSession.UserId.Value;
-            var myCart = await _cartRepository.FirstOrDefaultAsync(c => c.UserId == currentUserId);
-            if (myCart == null)
+
+            if (input.Items == null || !input.Items.Any())
             {
-                throw new UserFriendlyException("Giỏ hàng của bạn đang trống, không thể đặt hàng!");
+                throw new UserFriendlyException("Đơn hàng không có sản phẩm nào!");
             }
-            var cartItems = await _cartItemRepository.GetAllListAsync(ci => ci.CartId == myCart.Id);
-            if (!cartItems.Any())
-            {
-                throw new UserFriendlyException("Không có sản phẩm nào trong giỏ để thanh toán!");
-            }
+
             var order = ObjectMapper.Map<Order>(input);
             order.UserId = currentUserId;
-            order.Status = 0; 
-            order.TotalAmount = 0;
+            order.Status = 0; // 0: Chờ xác nhận
+            order.ItemsTotal = 0; 
+            order.ShippingFee = 30000; 
+            order.TotalAmount = 0; 
+
             var orderId = await Repository.InsertAndGetIdAsync(order);
-            decimal totalMoney = 0;
-            foreach (var item in cartItems)
+
+            decimal calculatedItemsTotal = 0;
+
+            foreach (var itemDto in input.Items)
             {
-                var product = await _productRepository.GetAsync(item.ProductId);
+                // Lấy sản phẩm thật từ Database để lấy giá gốc 
+                var product = await _productRepository.GetAsync(itemDto.ProductId);
+
                 var orderItem = new OrderItem
                 {
-                    OrderId = orderId,
-                    ProductId = item.ProductId,
-                    Quantity = item.Quantity,
-                    UnitPrice = product.Price 
+                    OrderId = orderId, // Gắn vào hóa đơn vừa tạo ở trên
+                    ProductId = itemDto.ProductId,
+                    Quantity = itemDto.Quantity,
+                    UnitPrice = product.Price // Dùng giá của Database, TUYỆT ĐỐI không dùng giá từ Frontend gửi lên
                 };
-                totalMoney += orderItem.UnitPrice * orderItem.Quantity;
+
+                calculatedItemsTotal += (orderItem.UnitPrice * orderItem.Quantity);
+
+                // Lưu món hàng con xuống DB
                 await _orderItemRepository.InsertAsync(orderItem);
-                await _cartItemRepository.DeleteAsync(item.Id);
+
+                // Tìm xem món hàng này trong giỏ của khách là thằng nào, rồi xóa nó đi (Vì đã mua rồi)
+                var cartItemToDelete = await _cartItemRepository.FirstOrDefaultAsync(ci => ci.ProductId == itemDto.ProductId && ci.Cart.UserId == currentUserId);
+                if (cartItemToDelete != null)
+                {
+                    await _cartItemRepository.DeleteAsync(cartItemToDelete);
+                }
             }
-            order.TotalAmount = totalMoney;
-            await CurrentUnitOfWork.SaveChangesAsync(); 
+
+            order.ItemsTotal = calculatedItemsTotal;
+            order.TotalAmount = calculatedItemsTotal + order.ShippingFee;
+
+            await CurrentUnitOfWork.SaveChangesAsync();
+
+            // Trả về kết quả cho React
             return ObjectMapper.Map<OrderDto>(order);
         }
         public async Task<List<OrderDto>> GetMyOrdersAsync()
@@ -86,3 +105,4 @@ namespace Dn_Cam.Orders
         }
     }
 }
+

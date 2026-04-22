@@ -1,26 +1,42 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 // import cartService, { type CartItemDto } from "../../services/CartService"
 import { useNavigate } from "react-router-dom";
 import type { CartDetailDto } from "../../services/cartService";
-import { useCartActions, useCarts, useCartSummary } from "../../stores/cartStore1";
+import { useCartActions, useCarts, useSelectedItems } from "../../stores/cartStore1";
 
 const Cart = () => {
     const navigate = useNavigate();
     const cartActions = useCartActions();
     const listItemCart = useCarts();
-    const cartSummary = useCartSummary();
+    const selectedItemIds = useSelectedItems()
+    const selectedItems = listItemCart.filter(item => selectedItemIds.includes(item.id))
     useEffect(() => {
         cartActions.fetchCart();
     }, [cartActions]);
-    const handleToggleSelect=(id:number)=>{
-        
-    }
-    
+    const summary = selectedItems.reduce(
+        (acc, item) => {
+            acc.quantity += item.quantity
+            acc.subTotal += item.productPrice * item.quantity
+            return acc
+        },
+        {quantity: 0, subTotal: 0}
+    )
+    const shippingFee = summary.quantity > 0 ? 30000 : 0;
+    const finalTotalAmount = summary.subTotal + shippingFee;
+    const isAllSelected = listItemCart.length > 0 && selectedItemIds.length === listItemCart.length;
     const handleRemoveItem  = async (id:number)=>{
        await cartActions.removeCartItem(id);
     }
+    const handleRemoveSelected = async () =>{
+        if (window.confirm("Bạn có chắc chắn muốn xóa các sản phẩm đã chọn khỏi giỏ hàng?")) {
+            await cartActions.removeSelectItems();
+        }
+    }
     const handleUpdateQuantity =(item: CartDetailDto,quantity:number)=>{
         cartActions.updateItemQuantity(item, quantity)
+    }
+    const checkOutCart = () =>{
+        navigate('/Checkout')
     }
     return (
         <div className="max-w-6xl mx-auto p-4 md:p-6 bg-gray-50 min-h-screen">
@@ -40,12 +56,16 @@ const Cart = () => {
                                 <input
                                     type="checkbox"
                                     className="w-5 h-5 accent-purple-600 rounded"
-                                    // checked={isAllSelected}
-                                    // onChange={handleToggleSelectAll}
+                                    checked={isAllSelected}
+                                    onChange={() => cartActions.toggleSelectAll()}
                                 />
                                 <span className="font-medium">Chọn tất cả ({listItemCart.length} sản phẩm)</span>
                             </label>
-                            <button className="text-red-500 hover:text-red-700 font-medium">
+                            <button 
+                                onClick={handleRemoveSelected}
+                                disabled={selectedItemIds.length === 0}
+                                className="text-red-500 hover:text-red-700 font-medium disabled:text-gray-400 disabled:cursor-not-allowed"
+                            >
                                 🗑️ Xóa đã chọn
                             </button>
                         </div>
@@ -57,8 +77,10 @@ const Cart = () => {
                                     <input
                                         type="checkbox"
                                         className="w-5 h-5 accent-purple-600 rounded cursor-pointer"
+                                        checked={selectedItemIds.includes(item.id)}
+                                        onChange={() => cartActions.toggleSelectItem(item.id)}
                                         // checked={item.selected}
-                                    onChange={() => handleToggleSelect(item.id)}
+                                    // onChange={() => handleToggleSelect(item.id)}
                                     />
                                     <img src={item.mainImage} alt={item.productName} className="w-20 h-20 object-cover rounded border" />
                                 </div>
@@ -111,30 +133,31 @@ const Cart = () => {
                             <div className="space-y-3 border-b pb-4 mb-4">
                                 <div className="flex justify-between text-gray-600">
                                     <span>Sản phẩm:</span>
-                                    <span className="font-medium">{listItemCart.length} sản phẩm</span>
+                                    <span className="font-medium">{selectedItems.length} sản phẩm</span>
                                 </div>
                                 <div className="flex justify-between text-gray-600">
                                     <span>Tạm tính: </span>
-                                    <span className="font-medium">{cartSummary.itemsTotal.toLocaleString('vi-VN')} đ</span>
+                                    <span className="font-medium">{summary.subTotal.toLocaleString('vi-VN')} đ</span>
                                 </div>
                                 <div className="flex justify-between text-gray-600">
                                     <span>Phí giao hàng: </span>
-                                    <span className="font-medium">{cartSummary.shippingFee.toLocaleString('vi-VN')} đ</span>
+                                    <span className="font-medium">{shippingFee.toLocaleString('vi-VN')} đ</span>
                                 </div>
                             </div>
 
                             <div className="flex justify-between items-center mb-6">
                                 <span className="font-bold text-lg">Tổng cộng: </span>
                                 <span className="text-2xl font-bold text-purple-700">
-                                    {cartSummary.totalAmount.toLocaleString('vi-VN')} đ
+                                    {finalTotalAmount.toLocaleString('vi-VN')} đ
                                 </span>
                             </div>
 
                             <button
-                                disabled={listItemCart.length === 0}
+                                disabled={selectedItems.length === 0}
                                 className="w-full bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 text-white font-bold py-3 rounded-lg transition-colors mb-3"
+                                onClick={() => checkOutCart()}
                             >
-                                Tiến Hành Thanh Toán ({listItemCart.length})
+                                Tiến Hành Thanh Toán ({selectedItems.length})
                             </button>
                         </div>
                     </div>

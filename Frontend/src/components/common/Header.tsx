@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCartActions, useTotalItemCarts } from '../../stores/cartStore';
+import { useCartActions, useTotalItemCarts } from '../../stores/cartStore1';
 // import { CartStore } from '../../stores/CartStore';
 
 const Header = () => {

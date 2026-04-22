@@ -5,7 +5,7 @@ export interface RegisterUserDto {
     emailAddress: string;
     userName: string;
     password: string;
-    // roleNames?: string[]; // Thêm trường này nếu muốn gửi thông tin về vai trò
+    roleNames: 'Users' // Thêm trường này nếu muốn gửi thông tin về vai trò
 }
 export interface LoginUserDto {
     userNameOrEmailAddress: string;

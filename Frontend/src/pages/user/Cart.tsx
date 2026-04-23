@@ -82,7 +82,7 @@ const Cart = () => {
                                         // checked={item.selected}
                                     // onChange={() => handleToggleSelect(item.id)}
                                     />
-                                    <img src={item.mainImage} alt={item.productName} className="w-20 h-20 object-cover rounded border" />
+                                    <img src={"https://res.cloudinary.com/dv11569cs/image/upload/q_auto/f_auto/v1775550637/hwilqxddmtjb0zlcywhn.jpg"} alt={item.productName} className="w-20 h-20 object-cover rounded border" />
                                 </div>
 
                                 <div className="flex-1">

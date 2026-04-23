@@ -12,8 +12,9 @@ export interface ProductDto {
     creationTime: Date
 }
 const productService = {
-    getAll: async (): Promise<ProductDto[]> => {
-        let response: any = await axiosClient.get('/api/services/app/Product/GetAll');
+    getAll: async (categoryId?: number): Promise<ProductDto[]> => {
+        const params = categoryId ? {categoryId: categoryId} : {}
+        let response: any = await axiosClient.get('/api/services/app/Product/GetAll',{params});
         return response.result?.items || response.result || response;
     }
 };
